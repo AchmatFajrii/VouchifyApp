@@ -197,7 +197,6 @@ svg {
  
  .card-category2 {
   background-color: #6732D9;
-  border-radius:;
   transition: all .2s;
  }
  
@@ -221,31 +220,6 @@ svg {
  
  @media (max-width: 1024px) { 
         .group-troli-login{
-          position: absolute;
-          width: 100%;
-          height: 100vh;
-          top: 100%;
-          right: -100%;
-          background-color: #270F59;
-          display: flex;
-          flex-direction: column;
-          transition: 0.3s;
-          font-size: 0.8rem;
-        }
-        
-        .troli{
-          background-color: #270F59;
-          width: 100%;
-          border-bottom: 2px solid white;
-          padding: 10px;
-        }
-        .login{
-          background-color: #270F59;
-          width: 100%;
-          border-bottom: 2px solid white;
-          padding: 10px;
-        }
-        .group-troli-login.active{
-          right: 0;
+          display: none;
         }
        }
