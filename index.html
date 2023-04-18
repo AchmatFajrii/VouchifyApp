@@ -63,7 +63,7 @@
       <header class="py-5 text-base text-white font-semibold bg-primary border-b-2 border-white sticky top-0 z-50">
         <div class="container mx-auto px-10 lg:px-32">
           <!-- navbar start -->
-          <nav class="navbar-nav flex items-center justify-between">  
+          <nav class="navbar-nav flex items-center justify-between">
             <div class="group-logo-search-country flex items-center" style="flex: 4;">
               <div class="logo">
                 <a href="index.2.html"
@@ -92,7 +92,7 @@
                 <p class="ml-2">Bahasa Indonesia | IDR</p>
               </div>
             </div>
-            <div class="group-troli-login items-center justify-end lg:flex" style="flex: 1;">
+            <div class="group-troli-login items-center justify-end w-80 hidden lg:flex-1 lg:flex">
               <a href="keranjang.html" class="troli flex items-center mt-1">
                 <lord-icon
                   class="w-11 h-11"
@@ -116,10 +116,34 @@
                 <span class="text-white font-semibold">Masuk</span></a
               >
             </div>
-            <div id="menu-bar" class="text-white lg:hidden">
-              <i class="w-7 h-7 cursor-pointer" data-feather="align-right"></i>
-            </div>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            </button>
           </nav>
+          <div class="group-troli-login mt-5 w-full bg-primary rounded-lg border-2 border-white hidden" id="navbar-default">
+            <a href="keranjang.html" class="troli flex items-center border-b-2 border-white hover:bg-secondary hover:rounded-t-lg">
+              <lord-icon
+                class="w-11 h-11"
+                src="https://cdn.lordicon.com/lpddubrl.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#ffffff"
+                stroke="70"
+              >
+              </lord-icon>
+              <span class="text-white font-semibold lg:hidden">Keranjang</span>
+            </a>
+            <a href="" class="login flex items-center hover:bg-secondary hover:rounded-b-lg">
+              <lord-icon
+                class="w-11 h-11"
+                src="https://cdn.lordicon.com/ljvjsnvh.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#ffffff"
+                stroke="70"
+              >
+              </lord-icon>
+              <span class="text-white font-semibold">Masuk</span></a
+            >
+          </div>
           <div class="navbar-menu flex justify-center items-center mt-5 w-full md:text-lg">
             <a class="mx-2 lg:mx-5" href="">PC</a>
             <a class="mx-2 lg:mx-5" href="">MOBILE</a>
@@ -852,6 +876,8 @@
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
       crossorigin="anonymous"
     ></script>
+    <!-- include flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <!-- include splide library -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="js/splide-extension-auto-scroll.min.js"></script>

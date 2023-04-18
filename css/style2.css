@@ -217,9 +217,3 @@ svg {
                -20px -20px 60px #2d1166;
  }
 
- 
- @media (max-width: 1024px) { 
-        .group-troli-login{
-          display: none;
-        }
-       }
