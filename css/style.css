@@ -1479,4 +1479,8 @@ video {
   .lg\:text-sm {
     font-size: 0.6rem;
   }
+
+  .lg\:text-xl {
+    font-size: 1.300rem;
+  }
 }
