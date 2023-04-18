@@ -60,17 +60,17 @@
   <!-- social media aside end -->
 
     <!--* HEADER Start -->
-      <header class="py-5 text-sm text-white font-semibold bg-primary border-b-2 border-white sticky top-0 z-50">
+      <header class="py-5 text-base text-white font-semibold bg-primary border-b-2 border-white sticky top-0 z-50">
         <div class="container mx-auto px-10 lg:px-32">
           <!-- navbar start -->
-          <nav class="navbar-nav flex items-center flex-wrap justify-between">  
-            <div class="group-logo-search-country flex items-center">
+          <nav class="navbar-nav flex items-center justify-between">  
+            <div class="group-logo-search-country flex items-center" style="flex: 4;">
               <div class="logo">
                 <a href="index.2.html"
                   ><img class="w-32 lg:w-full" src="img/vouchify-logo.svg" alt=""
                 /></a>
               </div>
-              <div class="search ml-16 hidden md:block">
+              <div class="search ml-10 hidden md:block">
                 <form action="">
                   <div class="search-input flex items-center border-2 border-white">
                     <input class="w-[25rem] p-1 bg-primary" type="text" placeholder="Cari voucher ..." />
@@ -92,7 +92,7 @@
                 <p class="ml-2">Bahasa Indonesia | IDR</p>
               </div>
             </div>
-            <div class="group-troli-login items-center lg:flex">
+            <div class="group-troli-login items-center justify-end lg:flex" style="flex: 1;">
               <a href="keranjang.html" class="troli flex items-center mt-1">
                 <lord-icon
                   class="w-11 h-11"
@@ -119,14 +119,14 @@
             <div id="menu-bar" class="text-white lg:hidden">
               <i class="w-7 h-7 cursor-pointer" data-feather="align-right"></i>
             </div>
-            <div class="navbar-menu flex justify-center items-center mt-5 w-full text-xs md:text-lg">
-              <a class="mx-2 lg:mx-5" href="">PC</a>
-              <a class="mx-2 lg:mx-5" href="">MOBILE</a>
-              <a class="mx-2 lg:mx-5" href="">XBOX</a>
-              <a class="mx-2 lg:mx-5"href="">NEW</a>
-              <a class="mx-2 lg:mx-5"href="">COMING SOON</a>
-            </div>
           </nav>
+          <div class="navbar-menu flex justify-center items-center mt-5 w-full md:text-lg">
+            <a class="mx-2 lg:mx-5" href="">PC</a>
+            <a class="mx-2 lg:mx-5" href="">MOBILE</a>
+            <a class="mx-2 lg:mx-5" href="">XBOX</a>
+            <a class="mx-2 lg:mx-5"href="">NEW</a>
+            <a class="mx-2 lg:mx-5"href="">COMING SOON</a>
+          </div>
           <!-- navbar end -->
         </div>
       </header>
@@ -139,9 +139,9 @@
           <div class="container mx-auto px-10 lg:px-32">
             <div class="flex flex-col items-center md:flex-row lg:px-20">
               <div class="tagline text-center text-white md:w-[60%] md:text-left">
-                <span class="text-sm relative z-20 md:text-lg lg:text-xl">Halo gamers,</span>
+                <span class="text-sm relative z-20 md:text-lg lg:text-lg">Halo gamers,</span>
                 <div class="wrapper">
-                  <div class="mt-2 text-xl font-bold md:text-2xl lg:text-5xl">Topup & Get a New
+                  <div class="mt-2 text-xl font-bold md:text-2xl lg:text-3xl">Topup & Get a New
                     <ul class="leading-90 mt-[-62px] h-[90px] overflow-hidden lg:mt-0">
                       <li class="text-change relative"><span class="relative bg-white">Experience in Gaming</span></li>
                       <li class="text-change relative"><span class="relative bg-white">Levels of Gaming Fun</span></li>
@@ -149,7 +149,7 @@
                     </ul>
                   </div>
                 </div>
-                <p class="mt-[-20px] text-sm relative z-20 md:pr-14 lg:pr-20 md:text-lg lg:text-xl lg:mt-0">Dapatkan pengalaman bermain game dan jadilah seorang pemenang sejati</p>
+                <p class="mt-[-20px] text-sm relative z-20 md:pr-14 lg:pr-20 md:text-lg lg:text-lg lg:mt-0">Dapatkan pengalaman bermain game dan jadilah seorang pemenang sejati</p>
                 <button class="btn-hero mt-5">
                     <a class="text-xs md:text-md lg:text-lg" href="">Mulai</a>
                 </button>
@@ -165,78 +165,129 @@
         <section class="carousel-game mt-10 md:mt-14 lg:mt-24">
           <div class="container mx-auto lg:px-32">
             <div class="flex flex-col justify-between lg:flex-row">
-              <div id="image-carousel" class="splide" aria-label="Beautiful Images">
-                <div class="splide__track md:rounded-t-lg lg:w-[59rem] lg:rounded-lg">
+              <div
+                id="image-carousel"
+                class="splide lg:px-4"
+                aria-label="Beautiful Images"
+              >
+                <div
+                  class="splide__track md:rounded-t-lg lg:max-w-[59rem] lg:rounded-lg"
+                >
                   <ul class="splide__list">
-                      <li class="splide__slide">
-                          <img src="img/mariobros.png" alt="">
-                      </li>
-                      <li class="splide__slide">
-                          <img  src="img/thelastofus.png" alt="">
-                      </li>
-                      <li class="splide__slide">
-                          <img  src="img/sims4.png" alt="">
-                      </li>
-                      <li class="splide__slide">
-                          <img  src="img/ResidentEvil4_HomepageBanner_956x528-En.png" alt="">
-                      </li>
-                      <li class="splide__slide">
-                          <img  src="img/Destiny_HomepageBanner_956x528-En.png" alt="">
-                      </li>
+                    <li class="splide__slide">
+                      <img src="img/mariobros.png" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/thelastofus.png" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/sims4.png" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="img/ResidentEvil4_HomepageBanner_956x528-En.png"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/Destiny_HomepageBanner_956x528-En.png" alt="" />
+                    </li>
                   </ul>
+                </div>
               </div>
+              <div
+                class="card-games-release w-[300px] hidden rounded-lg lg:block"
+              >
+                <ul
+                  class="list-card-games flex flex-col justify-between h-full border-2 border-white overflow-hidden rounded-lg"
+                >
+                  <li
+                    class="card-games p-3 text-white transition-all duration-100 ease-linear border-[1px] border-secondary hover:bg-secondary"
+                  >
+                    <a class="flex" href="">
+                      <div class="img-card w-[60%] rounded-lg">
+                        <img
+                          class="w-full rounded-lg"
+                          src="img/STAR_WARS_JEDI-_SURVIVOR_PC.jpeg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-description w-[40%] ml-2">
+                        <p class="text-xs">COMING SOON</p>
+                        <p class="text-sm font-bold">
+                          STAR WARS JEDI : SURVIVOR PC [ORIGIN]
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="card-games p-3 text-white transition-all duration-100 ease-linear border-[1px] border-secondary hover:bg-secondary"
+                  >
+                    <a class="flex" href="">
+                      <div class="img-card w-[60%] rounded-lg">
+                        <img
+                          class="w-full rounded-lg"
+                          src="img/resident_evil_4_remake_-_137x76.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-description w-[40%] ml-2">
+                        <p class="text-xs">NEW RELEASE</p>
+                        <p class="text-sm font-bold">
+                          STAR WARS JEDI : SURVIVOR PC [ORIGIN]
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="card-games p-3 text-white transition-all duration-100 ease-linear border-[1px] border-secondary hover:bg-secondary"
+                  >
+                    <a class="flex" href="">
+                      <div class="img-card w-[60%] rounded-lg">
+                        <img
+                          class="w-full rounded-lg"
+                          src="img/THE_LAST_OF_US_PART_I.jpeg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-description w-[40%] ml-2">
+                        <p class="text-xs">NEW RELEASE</p>
+                        <p class="text-sm font-bold">
+                          THE LAST OF US PART 1 PC
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="card-games p-3 text-white transition-all duration-100 ease-linear border-[1px] border-secondary hover:bg-secondary"
+                  >
+                    <a class="flex" href="">
+                      <div class="img-card w-[60%] rounded-lg">
+                        <img
+                          class="w-full rounded-lg"
+                          src="img/sims_4_growing_together_-_137x76.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card-description w-[40%] ml-2">
+                        <p class="text-xs">NEW RELEASE</p>
+                        <p class="text-sm font-bold">
+                          THE SIMS 4 GROWING TOGETHER PC DLC
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div class="card-games-release w-[300px] hidden rounded-lg lg:block">
-                <ul class="list-card-games flex flex-col justify-between h-full border-2 border-white overflow-hidden rounded-lg">
-                  <li class="card-games p-3 text-white transition-all duration-100 ease-linear border-[1px] border-secondary hover:bg-secondary">
-                      <a class="flex" href="">
-                          <div class="img-card w-[60%] rounded-lg">
-                              <img class="w-full rounded-lg" src="img/STAR_WARS_JEDI-_SURVIVOR_PC.jpeg" alt="">
-                          </div>
-                          <div class="card-description w-[40%] ml-2">
-                              <p class="text-xs text-[9px]">COMING SOON</p>
-                              <p class="text-sm text-[10px] font-bold">STAR WARS JEDI : SURVIVOR PC [ORIGIN]</p>
-                          </div>
-                      </a>
-                  </li>
-                  <li class="card-games p-3 text-white transition-all duration-100 ease-linear border-[1px] border-secondary hover:bg-secondary">
-                      <a class="flex" href="">
-                          <div class="img-card w-[60%] rounded-lg">
-                              <img class="w-full rounded-lg" src="img/resident_evil_4_remake_-_137x76.png" alt="">
-                          </div>
-                          <div class="card-description w-[40%] ml-2">
-                              <p class="text-xs text-[9px]">NEW RELEASE</p>
-                              <p class="text-sm text-[10px] font-bold">STAR WARS JEDI : SURVIVOR PC [ORIGIN]</p>
-                          </div>
-                      </a>
-                  </li>
-                  <li class="card-games p-3 text-white transition-all duration-100 ease-linear border-[1px] border-secondary hover:bg-secondary">
-                      <a class="flex" href="">
-                          <div class="img-card w-[60%] rounded-lg">
-                              <img class="w-full rounded-lg" src="img/THE_LAST_OF_US_PART_I.jpeg" alt="">
-                          </div>
-                          <div class="card-description w-[40%] ml-2">
-                              <p class="text-xs text-[9px]">NEW RELEASE</p>
-                              <p class="text-sm text-[10px] font-bold">THE LAST OF US PART 1 PC</p>
-                          </div>
-                      </a>
-                  </li>
-                  <li class="card-games p-3 text-white transition-all duration-100 ease-linear border-[1px] border-secondary hover:bg-secondary">
-                      <a class="flex" href="">
-                          <div class="img-card w-[60%] rounded-lg">
-                              <img class="w-full rounded-lg" src="img/sims_4_growing_together_-_137x76.png" alt="">
-                          </div>
-                          <div class="card-description w-[40%] ml-2">
-                              <p class="text-xs text-[9px]">NEW RELEASE</p>
-                              <p class="text-sm text-[10px] font-bold">THE SIMS 4 GROWING TOGETHER PC DLC</p>
-                          </div>
-                      </a>
-                  </li>
-              </ul>
-              </div>
-              <div class="btn-comingsoon-release flex text-primary text-sm font-bold md:text-lg lg:hidden">
-                <button class="block flex-1 p-2 md:rounded-bl-lg bg-fourth">COMING SOON ></button>
-                <button class="block flex-1 p-2 md:rounded-br-lg bg-fifth">RELEASE ></button>
+              <div
+                class="btn-comingsoon-release flex text-primary text-sm font-bold md:text-lg lg:hidden"
+              >
+                <button class="block flex-1 p-2 md:rounded-bl-lg bg-fourth">
+                  COMING SOON >
+                </button>
+                <button class="block flex-1 p-2 md:rounded-br-lg bg-fifth">
+                  RELEASE >
+                </button>
               </div>
             </div>
           </div>
@@ -246,7 +297,7 @@
         <section class="flashsale mt-10 md:mt-14 lg:mt-24">
           <div class="container mx-auto px-5 md:px-0 lg:px-32">
             <div class="title flex items-center">
-              <p class="p-2 w-[18rem] text-lg text-white font-bold border-2 border-white shadow-xl shadow-secondary md:w-[25rem] md:text-3xl lg:w-[32.7rem] lg:text-5xl">FLASH SALE⚡</p> 
+              <p class="p-2 w-[18rem] text-lg text-white font-bold border-2 border-white shadow-xl shadow-secondary md:w-[33rem] md:text-3xl lg:w-[36rem] lg:text-4xl">FLASH SALE⚡</p> 
               <div class="line h-[1px] w-full border-[1px] border-white"></div>
             </div>
             <div class="flash-sale-area p-3 mt-5 bg-primary border-2 border-white md:p-7 rounded-lg md:mt-10">
@@ -284,11 +335,11 @@
         <section class="top-games mt-10 md:mt-14 lg:mt-24">
           <div class="container mx-auto px-5 md:px-0 lg:px-32">
             <div class="title flex items-center">
-              <p class="p-2 w-[18rem] text-lg text-white font-bold border-2 border-white shadow-xl shadow-secondary md:w-[25rem] md:text-3xl lg:w-[32.7rem] lg:text-5xl">BEST SELLER</p> 
+              <p class="p-2 w-[18rem] text-lg text-white font-bold border-2 border-white shadow-xl shadow-secondary md:w-[29rem] md:text-3xl lg:w-[32.7rem] lg:text-4xl">BEST SELLER</p> 
               <div class="line h-[1px] w-full border-[1px] border-white"></div>
             </div>
-            <div class="card-best-seller flex justify-evenly flex-wrap mt-3 md:justify-between md:mt-6">
-              <a class=" mt-3 md:mt-5" href="#">
+            <div class="card-best-seller flex justify-around flex-wrap md:mt-6">
+              <a class="mt-3 md:mt-5" href="#">
                 <div class="card w-[9.6rem] h-[13rem] p-3 bg-white relative overflow-visible rounded-lg md:w-[15.2rem] md:h-[18.4rem] lg:w-[15rem] lg:h-[19.4rem]">
                   <div class="card-img w-[100%] h-[50%] overflow-hidden md:w-[100%] md:h-[50%]"><img src="img/minecraft.jpeg" alt=""></div>
                   <div class="card-info text-[0.6rem] md:text-[1rem]">
@@ -486,11 +537,11 @@
         <section class="category mt-10 md:mt-14 lg:mt-24">
           <div class="container mx-auto px-5 md:px-0 lg:px-32">
             <div class="title flex items-center">
-              <p class="p-2 w-[20rem] text-lg text-white font-bold border-2 border-white shadow-xl shadow-secondary md:w-[25rem] md:text-3xl lg:w-[36rem] lg:text-5xl">KATEGORI GAME</p> 
+              <p class="p-2 w-[20rem] text-lg text-white font-bold border-2 border-white shadow-xl shadow-secondary md:w-[37rem] md:text-3xl lg:w-[40rem] lg:text-4xl">KATEGORI GAME</p> 
               <div class="line h-[1px] w-full border-[1px] border-white"></div>
             </div>
-            <ul class="flex flex-wrap justify-evenly md:justify-between mt-4">
-              <li class="mt-1 md:mt-3"><a href="">
+            <ul class="flex flex-wrap justify-around mt-4">
+              <li class="mt-3"><a href="">
                   <div class="card-category">
                       <div class="card-category2 flex flex-col justify-between items-center py-4 w-[105px] h-[105px] text-xs text-white font-semibold md:text-base md:w-[183px] md:h-[170px] lg:w-[170px] lg:h-[170px]">
                           <span>5947</span>
@@ -499,7 +550,7 @@
                       </div>
                   </div>
               </a></li>
-              <li class="mt-1 md:mt-3"><a href="">
+              <li class="mt-3"><a href="">
                   <div class="card-category">
                       <div class="card-category2 flex flex-col justify-between items-center py-4 w-[105px] h-[105px] text-xs text-white font-semibold md:text-base md:w-[183px] md:h-[170px] lg:w-[170px] lg:h-[170px]">
                           <span>5947</span>
@@ -508,7 +559,7 @@
                       </div>
                   </div>
               </a></li>
-              <li class="mt-1 md:mt-3"><a href="">
+              <li class="mt-3"><a href="">
                   <div class="card-category">
                       <div class="card-category2 flex flex-col justify-between items-center py-4 w-[105px] h-[105px] text-xs text-white font-semibold md:text-base md:w-[183px] md:h-[170px] lg:w-[170px] lg:h-[170px]">
                           <span>5947</span>
@@ -517,7 +568,7 @@
                       </div>
                   </div>
               </a></li>
-              <li class="mt-1 md:mt-3"><a href="">
+              <li class="mt-3"><a href="">
                   <div class="card-category">
                       <div class="card-category2 flex flex-col justify-between items-center py-4 w-[105px] h-[105px] text-xs text-white font-semibold md:text-base md:w-[183px] md:h-[170px] lg:w-[170px] lg:h-[170px]">
                           <span>5947</span>
@@ -526,7 +577,7 @@
                       </div>
                   </div>
               </a></li>
-              <li class="mt-1 md:mt-3"><a href="">
+              <li class="mt-3"><a href="">
                   <div class="card-category">
                       <div class="card-category2 flex flex-col justify-between items-center py-4 w-[105px] h-[105px] text-xs text-white font-semibold md:text-base md:w-[183px] md:h-[170px] lg:w-[170px] lg:h-[170px]">
                           <span>5947</span>
@@ -535,7 +586,7 @@
                       </div>
                   </div>
               </a></li>
-              <li class="mt-1 md:mt-3"><a href="">
+              <li class="mt-3"><a href="">
                   <div class="card-category">
                       <div class="card-category2 flex flex-col justify-between items-center py-4 w-[105px] h-[105px] text-xs text-white font-semibold md:text-base md:w-[183px] md:h-[170px] lg:w-[170px] lg:h-[170px]">
                           <span>5947</span>
@@ -544,7 +595,7 @@
                       </div>
                   </div>
               </a></li>
-              <li class="mt-1 md:mt-3"><a href="">
+              <li class="mt-3"><a href="">
                   <div class="card-category">
                       <div class="card-category2 flex flex-col justify-between items-center py-4 w-[105px] h-[105px] text-xs text-white font-semibold md:text-base md:w-[183px] md:h-[170px] lg:w-[170px] lg:h-[170px]">
                           <span>5947</span>
@@ -553,7 +604,7 @@
                       </div>
                   </div>
               </a></li>
-              <li class="mt-1 md:mt-3"><a href="">
+              <li class="mt-3"><a href="">
                   <div class="card-category">
                       <div class="card-category2 flex flex-col justify-between items-center py-4 w-[105px] h-[105px] text-xs text-white font-semibold md:text-base md:w-[183px] md:h-[170px] lg:w-[170px] lg:h-[170px]">
                           <span>5947</span>
@@ -562,7 +613,7 @@
                       </div>
                   </div>
               </a></li>
-              <li class="mt-1 md:mt-3"><a href="">
+              <li class="mt-3"><a href="">
                   <div class="card-category">
                       <div class="card-category2 flex flex-col justify-between items-center py-4 w-[105px] h-[105px] text-xs text-white font-semibold md:text-base md:w-[183px] md:h-[170px] lg:w-[170px] lg:h-[170px]">
                           <span>5947</span>
@@ -571,7 +622,7 @@
                       </div>
                   </div>
               </a></li>
-              <li class="mt-1 md:mt-3"><a href="">
+              <li class="mt-3"><a href="">
                   <div class="card-category">
                       <div class="card-category2 flex flex-col justify-between items-center py-4 w-[105px] h-[105px] text-xs text-white font-semibold md:text-base md:w-[183px] md:h-[170px] lg:w-[170px] lg:h-[170px]">
                           <span>5947</span>
@@ -580,7 +631,7 @@
                       </div>
                   </div>
               </a></li>
-              <li class="mt-1 md:mt-3"><a href="">
+              <li class="mt-3"><a href="">
                   <div class="card-category">
                       <div class="card-category2 flex flex-col justify-between items-center py-4 w-[105px] h-[105px] text-xs text-white font-semibold md:text-base md:w-[183px] md:h-[170px] lg:w-[170px] lg:h-[170px]">
                           <span>5947</span>
@@ -589,7 +640,7 @@
                       </div>
                   </div>
               </a></li>
-              <li class="mt-1 md:mt-3"><a href="">
+              <li class="mt-3"><a href="">
                   <div class="card-category">
                       <div class="card-category2 flex flex-col justify-between items-center py-4 w-[105px] h-[105px] text-xs text-white font-semibold md:text-base md:w-[183px] md:h-[170px] lg:w-[170px] lg:h-[170px]">
                           <span>5947</span>
@@ -598,7 +649,7 @@
                       </div>
                   </div>
               </a></li>
-              <li class="mt-1 md:mt-3"><a href="">
+              <li class="mt-3"><a href="">
                   <div class="card-category">
                       <div class="card-category2 flex flex-col justify-between items-center py-4 w-[105px] h-[105px] text-xs text-white font-semibold md:text-base md:w-[183px] md:h-[170px] lg:w-[170px] lg:h-[170px]">
                           <span>5947</span>
@@ -607,7 +658,7 @@
                       </div>
                   </div>
               </a></li>
-              <li class="mt-1 md:mt-3"><a href="">
+              <li class="mt-3"><a href="">
                   <div class="card-category">
                       <div class="card-category2 flex flex-col justify-between items-center py-4 w-[105px] h-[105px] text-xs text-white font-semibold md:text-base md:w-[183px] md:h-[170px] lg:w-[170px] lg:h-[170px]">
                           <span>5947</span>
@@ -624,15 +675,15 @@
         <section class="benefit mt-10 md:mt-14 lg:mt-24">
           <div class="container mx-auto px-5 md:px-0 lg:px-32">
             <div class="title flex items-center">
-              <p class="p-2 w-[9rem] text-lg text-white font-bold border-2 border-white shadow-xl shadow-secondary md:w-[10rem] md:text-3xl lg:w-[17rem] lg:text-5xl">BENEFIT</p> 
+              <p class="p-2 w-[9rem] text-lg text-white font-bold border-2 border-white shadow-xl shadow-secondary md:w-[19rem] md:text-3xl lg:w-[17rem] lg:text-4xl">BENEFIT</p> 
               <div class="line h-[1px] w-full border-[1px] border-white"></div>
             </div>
             <div class="list-benefit mt-5 lg:mt-10">
               <div class="flex flex-wrap justify-evenly items-center text-white text-center text-xs md:text-sm md:justify-between lg:text-base">
-                  <a class="card-benefit flex flex-col justify-center p-4 mx-4 w-32 md:w-40 lg:w-60" href=""><img src="img/cpp-hover.webp" alt=""><p>Costumer Protection</p></a>
-                  <a class="card-benefit flex flex-col justify-center p-4 mx-4 w-32 md:w-40 lg:w-60" href=""><img src="img/deals-hover.webp" alt=""><p>Deals & Promotions</p></a>
-                  <a class="card-benefit flex flex-col justify-center p-4 mx-4 w-32 md:w-40 lg:w-60" href=""><img src="img/cs-hover.webp" alt=""><p>24/7 Costumer Service</p></a>
-                  <a class="card-benefit flex flex-col justify-center p-4 mx-4 w-32 md:w-40 lg:w-60" href=""><img src="img/gaming-blog-hover.webp" alt=""><p>Gaming Blog</p></a>
+                  <a class="card-benefit flex flex-col justify-center p-4 mx-4 w-32 md:w-40 lg:w-56" href=""><img src="img/cpp-hover.webp" alt=""><p>Costumer Protection</p></a>
+                  <a class="card-benefit flex flex-col justify-center p-4 mx-4 w-32 md:w-40 lg:w-56" href=""><img src="img/deals-hover.webp" alt=""><p>Deals & Promotions</p></a>
+                  <a class="card-benefit flex flex-col justify-center p-4 mx-4 w-32 md:w-40 lg:w-56" href=""><img src="img/cs-hover.webp" alt=""><p>24/7 Costumer Service</p></a>
+                  <a class="card-benefit flex flex-col justify-center p-4 mx-4 w-32 md:w-40 lg:w-56" href=""><img src="img/gaming-blog-hover.webp" alt=""><p>Gaming Blog</p></a>
               </div>
           </div>
           </div>
@@ -642,7 +693,7 @@
         <section class="update-turnamen mt-10 md:mt-14 lg:mt-24">
           <div class="container mx-auto px-5 md:px-0 lg:px-32">
             <div class="title flex items-center">
-              <p class="p-2 w-[25rem] text-lg text-white font-bold border-2 border-white shadow-xl shadow-secondary md:w-[31rem] md:text-3xl lg:w-[44rem] lg:text-5xl">UPDATE TURNAMEN</p> 
+              <p class="p-2 w-[25rem] text-lg text-white font-bold border-2 border-white shadow-xl shadow-secondary md:w-[47rem] md:text-3xl lg:w-[50rem] lg:text-4xl">UPDATE TURNAMEN</p> 
               <div class="line h-[1px] w-full border-[1px] border-white"></div>
             </div>
             <div class="video mt-5 md:mt-10">
@@ -663,7 +714,7 @@
         <section class="blog mt-10 md:mt-14 lg:mt-24">
           <div class="container mx-auto px-5 md:px-0 lg:px-32">
             <div class="title flex items-center">
-              <p class="p-2 w-[25rem] text-lg text-white font-bold border-2 border-white shadow-xl shadow-secondary md:w-[31rem] md:text-3xl lg:w-[42rem] lg:text-5xl">BLOG VOUCHIFY</p> 
+              <p class="p-2 w-[25rem] text-lg text-white font-bold border-2 border-white shadow-xl shadow-secondary md:w-[40rem] md:text-3xl lg:w-[42rem] lg:text-4xl">BLOG VOUCHIFY</p> 
               <div class="line h-[1px] w-full border-[1px] border-white"></div>
             </div>
             <div class="list-blog flex flex-wrap justify-between mt-6">

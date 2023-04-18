@@ -13,6 +13,16 @@ module.exports = {
     },
       lineHeight: {
         '90' : '90px'
+      },
+      fontSize: {
+        xs: '0.5rem',
+        sm: '0.6rem',
+        base: '0.8rem',
+        lg: '1rem',
+        'xl': '1.300rem',
+        '2xl': '1.400rem',
+        '3xl': '2.500rem',
+        '4xl': '3rem',
       }},
   },
   plugins: [],
