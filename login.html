@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vouchify | Home</title>
+    <link rel="icon" href="img/v-logo.png">
+    <!-- Style Tailwind -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Style  css -->
+    <link rel="stylesheet" href="css/style2.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Library Splide -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+  </head>
+  <body class="bg-primary" style="height: 100%;">
+
+    <!--TODO FORMAT URUTAN UTILITY
+    class="name | display | size | text | color | decoration | responsive"
+    -->
+    <div class="game-box"></div>
+    <!-- info section start -->
+   
+    <!-- info section end -->
+    <!-- social media aside start -->
+   
+  <!-- social media aside end -->
+
+    <!--* HEADER Start -->
+    <header class="py-5 text-base text-white font-semibold bg-primary border-b-2 border-white sticky top-0 z-50">
+        <div class="container mx-auto px-10 lg:px-32">
+          <!-- navbar start -->
+          <nav class="navbar-nav flex items-center justify-between">
+            <div class="group-logo-search-country flex items-center" style="flex: 4;">
+              <div class="logo">
+                <a href="index.html"
+                  ><img class="w-32 lg:w-full" src="img/vouchify-logo.svg" alt=""
+                /></a>
+              </div>
+              <div class="search ml-10 hidden md:block">
+                <form action="">
+                  <div class="search-input flex items-center border-2 border-white">
+                    <input class="w-[25rem] p-1 bg-primary" type="text" placeholder="Cari voucher ..." />
+                    <button class="bg-white" type="submit">
+                      <lord-icon
+                        class="w-7 h-7"
+                        src="https://cdn.lordicon.com/zniqnylq.json"
+                        trigger="hover"
+                        colors="primary:black,secondary:black"
+                        stroke="70"
+                      >
+                      </lord-icon>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="country items-center ml-5 hidden lg:flex">
+                <img class="w-5" src="img/indonesia.svg" alt="" />
+                <p class="ml-2">Bahasa Indonesia | IDR</p>
+              </div>
+            </div>
+            <div class="group-troli-login items-center justify-end w-80 hidden lg:flex-1 lg:flex">
+              <a href="keranjang.html" class="troli flex items-center mt-1">
+                <lord-icon
+                  class="w-11 h-11"
+                  src="https://cdn.lordicon.com/lpddubrl.json"
+                  trigger="hover"
+                  colors="primary:#ffffff,secondary:#ffffff"
+                  stroke="70"
+                >
+                </lord-icon>
+                <span class="text-white font-semibold lg:hidden">Keranjang</span>
+              </a>
+              <a href="" class="login flex items-center">
+                <lord-icon
+                  class="w-11 h-11"
+                  src="https://cdn.lordicon.com/ljvjsnvh.json"
+                  trigger="hover"
+                  colors="primary:#ffffff,secondary:#ffffff"
+                  stroke="70"
+                >
+                </lord-icon>
+                <span class="text-white font-semibold">Masuk</span></a
+              >
+            </div>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg lg:hidden hover:bg-white hover:text-primary focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            </button>
+          </nav>
+          <div class="group-troli-login mt-5 w-full bg-primary rounded-lg border-2 border-white hidden" id="navbar-default">
+            <a href="keranjang.html" class="troli flex items-center border-b-2 border-white hover:bg-secondary hover:rounded-t-lg">
+              <lord-icon
+                class="w-11 h-11"
+                src="https://cdn.lordicon.com/lpddubrl.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#ffffff"
+                stroke="70"
+              >
+              </lord-icon>
+              <span class="text-white font-semibold lg:hidden">Keranjang</span>
+            </a>
+            <a href="" class="login flex items-center hover:bg-secondary hover:rounded-b-lg">
+              <lord-icon
+                class="w-11 h-11"
+                src="https://cdn.lordicon.com/ljvjsnvh.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#ffffff"
+                stroke="70"
+              >
+              </lord-icon>
+              <span class="text-white font-semibold">Masuk</span></a
+            >
+          </div>
+          <div class="navbar-menu flex justify-center items-center mt-5 w-full md:text-lg">
+            <a class="mx-2 lg:mx-5" href="">PC</a>
+            <a class="mx-2 lg:mx-5" href="">MOBILE</a>
+            <a class="mx-2 lg:mx-5" href="">XBOX</a>
+            <a class="mx-2 lg:mx-5"href="">NEW</a>
+            <a class="mx-2 lg:mx-5"href="">COMING SOON</a>
+          </div>
+          <!-- navbar end -->
+        </div>
+    </header>
+    <!--* HEADER End -->
+
+    <!--* MAIN Start -->
+      <main class="mt-5 py-10">
+        <section class="login-register">
+          <div class="container mx-auto px-10 lg:px-32">
+            <div class="form-login-register flex flex-wrap justify-center md:justify-between">
+              <div class="login relative flex-1 mx-4 border-2 border-white">
+                <h3 class="form-label text-lg md:text-xl text-white font-bold bg-footer absolute top-[-1rem] left-1/2 translate-x-[-50%] px-4 py-1">LOGIN</h3>
+                <form class="login-form py-10 px-5" method="">
+                  <p class="text-sm md:text-base text-center text-white">Already Registered? Please Login From Here.</p>
+                  <div class="form-input flex flex-wrap justify-between items-center mt-5">
+                    <div class="email w-full lg:w-[49%]">
+                      <label class="text-sm md:text-base text-zinc-400" for="email">EMAIL ADDRESS*</label> <br>
+                      <input id="email" class="email-input w-full mt-1 text-white text-sm md:text-base font-semibold py-2 px-4 rounded-full bg-primary border border-white" name="email" type="email">
+                    </div>
+                    <div class="password w-full lg:w-[49%]">
+                      <label class="text-sm md:text-base text-zinc-400" for="password">PASSWORD*</label> <br>
+                      <input id="password" class="password-input w-full mt-1 text-white text-base font-semibold py-2 px-4 rounded-full bg-primary border border-white" name="email" type="email">
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <a class="mt-5 text-sm md:text-base text-zinc-400 border-b border-zinc-400" href="">Lupa password?</a>
+                    <button class="block text-base md:text-lg py-2 px-4 md:px-8 rounded-full text-white mt-5 bg-secondary" type="submit">LOGIN</button>
+                  </div>
+                  <div class="flex items-center flex-wrap justify-center mt-4 md:mt-0">
+                    <hr class="flex-1 border-t border-gray-300">
+                    <span class="text-lg md:text-xl text-white font-bold bg-footer px-4 py-1 mx-4">OR</span>
+                    <hr class="flex-1 border-t border-gray-300">
+                  </div>
+                  <div class="login-fb-google flex flex-wrap justify-between mt-5">
+                    <a class="flex justify-between rounded-full bg-[#3b5998] w-full lg:w-[49%] py-2 px-4" href="">
+                      <img class="w-5" src="img/fb.svg" alt="">
+                      <span class="text-white text-sm md:text-base">FACEBOOK</span>
+                    </a>
+                    <a class="flex justify-between mt-3 lg:mt-0 rounded-full bg-[#db4a39] w-full lg:w-[49%] py-2 px-4" href="">
+                      <img class="w-5" src="img/google.svg" alt="">
+                      <span class="text-white text-sm md:text-base">GOOGLE</span>
+                    </a>
+                  </div>                        
+                </form>
+              </div>
+              <div class="register relative flex-1 mx-4 mt-10 md:mt-0 border-2 border-white">
+                <h3 class="form-label text-lg md:text-xl text-white font-bold bg-footer absolute top-[-1rem] left-1/2 translate-x-[-50%] px-4 py-1">REGISTER</h3>
+                <form class="register-form py-10 px-5" method="">
+                  <p class="text-sm md:text-base text-center text-white">CUKUP KLIK TOMBOL DAFTAR DAN ISI FORMULIR UNTUK MENJADI BAGIAN DARI KOMUNITAS ONLINE BESAR.</p>
+                
+                  <div class="register-benefit flex flex-col items-center mt-5">
+                    <div class="item flex items-center  w-full lg:w-[49%]">
+                      <img class="w-14" src="img/safe.svg" alt="">
+                      <p class="ml-3 text-white text-base md:text-lg">AMAN, MUDAH DAN CEPAT</p>
+                    </div>
+                    <div class="item flex items-center  w-full lg:w-[49%] mt-4">
+                      <img class="w-14" src="img/discount.svg" alt="">
+                      <p class="ml-3 text-white text-base md:text-lg">DAPATKAN DISKON & KEUNTUNGAN</p>
+                    </div>
+                    <div class="item flex items-center  w-full lg:w-[49%] mt-4">
+                      <img class="w-14" src="img/community.svg" alt="">
+                      <p class="ml-3 text-white text-base md:text-lg">JADILAH BAGIAN DARI KOMUNITAS</p>
+                    </div>
+                    <a href="" class="block py-2 px-4 md:px-8 text-base md:text-lg rounded-full text-white mt-5 bg-secondary" type="submit">REGISTER</a>
+                  </div>
+                </form>
+              </div>
+              <!-- <div class="register relative flex-1 mx-4 mt-10 lg:mt-0 border-2 border-white">
+                <h3 class="form-label text-xl text-white font-bold bg-footer absolute top-[-1rem] left-1/2 translate-x-[-50%] px-4 py-1">REGISTER</h3>
+                <div class="py-10">
+                  <p class="text-base text-center text-white">CUKUP KLIK TOMBOL DAFTAR DAN ISI FORMULIR UNTUK MENJADI BAGIAN DARI KOMUNITAS ONLINE BESAR.</p>
+                  <div class="register-benefit flex flex-col items-center mt-10">
+                    <div class="item flex items-center">
+                      <img class="w-14" src="img/safe.svg" alt="">
+                      <p class="ml-3 text-white text-lg">AMAN, MUDAH DAN CEPAT</p>
+                    </div>
+                    <div class="item flex items-center mt-4">
+                      <img class="w-14" src="img/discount.svg" alt="">
+                      <p class="ml-3 text-white text-lg">DAPATKAN DISKON & KEUNTUNGAN</p>
+                    </div>
+                    <div class="item flex items-center mt-4">
+                      <img class="w-14" src="img/community.svg" alt="">
+                      <p class="ml-3 text-white text-lg">JADILAH BAGIAN DARI KOMUNITAS</p>
+                    </div>
+                    <a href="" class="block py-2 px-8 rounded-full text-white mt-5 bg-secondary" type="submit">REGISTER</a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </section>
+      </main>
+    <!--* MAIN End -->
+
+    <!--* FOOTER Start -->
+      <footer class="py-20 text-xs text-white bg-footer md:text-sm lg:text-base">
+        <div class="container mx-auto px-5 md:px-0 lg:px-32">
+          <div class="footer flex flex-wrap pb-10 border-b-2 border-white">
+            <div class="about w-full md:w-[50%]">
+              <img src="img/vouchify-logo.svg" alt="">
+              <p class="mt-4 pr-12">Vouchify adalah sebuah platform e-commerce yang mengkhususkan diri dalam penjualan voucher game digital untuk permainan PC, konsol, dan permainan mobile.</p>
+            </div>
+            <div class="menu-perusahaan w-[50%] mt-5 md:mt-0 md:w-[25%] lg:w-[17%]">
+              <ul>
+                <li class="font-bold">MENU CEPAT</li>
+                <li class="mt-2"><a href="">Beranda</a></li>
+                <li class="mt-2"><a href="">Semua Game</a></li>
+                <li class="mt-2"><a href="">Hubungi Kami</a></li>
+                <li class="mt-2 font-bold">PERUSAHAAN</li>
+                <li class="mt-2"><a href="">Syarat & Ketentuan</a></li>
+                <li class="mt-2"><a href="">Kebijakan Privasi</a></li>
+                <li class="mt-2"><a href="">Tentang Kami</a></li>
+              </ul>
+            </div>
+            <div class="akun-hubungi w-[50%] mt-5 md:mt-0 md:w-[25%] lg:w-[17%]">
+              <ul>
+                <li class="font-bold">HALAMAN AKUN</li>
+                <li class="mt-2"><a href="">Masuk Akun</a></li>
+                <li class="mt-2"><a href="">Daftar Akun</a></li>
+                <li class="mt-2"><a href="">Lupa Password</a></li>
+                <li class="mt-2 font-bold">HUBUNGI KAMI</li>
+                <li class="mt-2"><a href="">Masalah Transaksi</a></li>
+                <li class="mt-2"><a href="">Buat Bisnis Topup</a></li>
+                <li class="mt-2"><a href="">Gabung Reseller</a></li>
+              </ul>
+            </div>
+            <div class="social-media w-full mt-5 md:mt-10 lg:w-[16%] lg:mt-0">
+              <ul>
+                <li class="font-bold">IKUTI KAMI</li>
+                <li class="flex mt-2">
+                  <a href=""><img class="w-8 mx-3" src="img/fb.svg" alt=""></a>
+                  <a href=""><img class="w-8 mx-3" src="img/ig.svg" alt=""></a>
+                  <a href=""><img class="w-8 mx-3" src="img/tw.svg" alt=""></a>
+                  <a href=""><img class="w-8 mx-3" src="img/tt.svg" alt=""></a>
+                </li>
+                <li class="mt-4 font-bold">UNDUH APLIKASI KAMI</li>
+                <li><a href=""><img src="img/googlestore.svg" alt=""></a></li>
+                <li><a href=""><img class="mt-2" src="img/appstore.svg" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="copyright mt-5 text-center">&copy; 2023 Vouchify. All rights reserved.</p>
+        </div>
+        </div>
+      </footer>
+    <!--* FOOTER End -->
+    
+    <!-- Script JS -->
+    <!-- include Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- include flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <!-- include splide library -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="js/splide-extension-auto-scroll.min.js"></script>
+    <!-- include carousel library -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- include all logic -->
+    <script src="js/app.js"></script>
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"
+    ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.151.3/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/",
+          "controls": "https://unpkg.com/three@0.151.3/examples/jsm/controls/OrbitControls.js",
+          "loaders": "https://unpkg.com/three@0.151.3/examples/jsm/loaders/GLTFLoader.js"
+        }
+      }
+    </script>
+    <script type="module">
+      import * as THREE from "three";
+      import { OrbitControls } from "controls";
+      import { GLTFLoader } from "loaders";
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+      );
+
+      const renderer = new THREE.WebGLRenderer({ alpha: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      const gameBox = document.querySelector('.hero-image')
+      gameBox.appendChild(renderer.domElement);
+
+      // const controls = new OrbitControls(camera, renderer.domElement);
+
+      // const geometry = new THREE.BoxGeometry(1, 1, 1);
+      // const material = new THREE.MeshLambertMaterial({ color: 0x00ff00 });
+      // const cube = new THREE.Mesh(geometry, material);
+      // scene.add(cube);
+
+      camera.position.z = 1;
+      camera.position.x =  0.9;
+      camera.position.y =  0.4;
+      // camera.position.y = -2;
+
+      const ambientLight = new THREE.AmbientLight(0x4BE2F2, 10); // soft white light
+      scene.add(ambientLight);
+
+      const pointLight = new THREE.PointLight(0xffffff, 1, 100);
+      pointLight.position.set(50, 50, 50);
+      scene.add(pointLight);
+
+      const loader = new GLTFLoader();
+      let game;
+
+      loader.load("scene.gltf", function (gltf) {
+        game = gltf.scene;
+        game.scale.set(0.42, 0.48, 0.3); 
+        scene.add(game);
+      });
+
+      function animate() {
+        if(game){
+          game.rotation.y += 0.01
+          // game.rotation.z += 0.01
+        }
+
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+      }
+      animate();
+    </script>
+    <script src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".hero-image-1"), {
+        max: 50,
+        speed: 300
+      });
+      
+    </script>
+  </body>
+</html>
