@@ -33,10 +33,10 @@
     <!--TODO FORMAT URUTAN UTILITY
     class="name | display | size | text | color | decoration | responsive"
     -->
-
+    <div class="game-box"></div>
     <!-- info section start -->
     <section
-      class="info flex items-center justify-center py-2 px-1 text-xs text-center bg-fourth lg:py-4 lg:text-sm"
+      class="info flex items-center justify-center py-2 px-1 text-xs text-center bg-fourth lg:py-4 lg:text-base"
     >
       <p>
         #KETUPATVouchify KEjutan Top UP HemAT Vouchify! Mega Flash Sale,
@@ -116,7 +116,7 @@
                 <span class="text-white font-semibold">Masuk</span></a
               >
             </div>
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg lg:hidden hover:bg-white hover:text-primary focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
               <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
             </button>
           </nav>
@@ -157,7 +157,7 @@
     <!--* HEADER End -->
 
     <!--* MAIN Start -->
-      <main class="mt-5 md:mt-10 lg:mt-14">
+      <main class="mt-5 md:mt-10 lg:mt-m110">
         <!-- hero section start -->
         <section class="hero">
           <div class="container mx-auto px-10 lg:px-32">
@@ -178,15 +178,18 @@
                     <a class="text-sm md:text-md lg:text-lg" href="">Mulai</a>
                 </button>
               </div> 
-              <div class="hero-image mt-5 md:mt-0 md:w-[40%]">
+              <div data-tilt class="mt-5 block lg:hidden md:mt-0 md:w-[40%]">
                 <img class="ml-auto w-full" src="img/heroimage.svg" alt="">
+              </div>
+              <div class="hero-image mt-5 hidden lg:block overflow-hidden md:mt-0 md:w-[40%]">
+                <img id="hero-image" class="box-image ml-auto w-full" src="" alt="">
               </div>
             </div>
           </div>
         </section>
         <!-- hero section end -->
         <!-- carousel game section start -->
-        <section class="carousel-game mt-10 md:mt-14 lg:mt-24">
+        <section class="carousel-game mt-10 md:mt-14 lg:mt-m90">
           <div class="container mx-auto lg:px-32">
             <div class="flex flex-col justify-between lg:flex-row">
               <div
@@ -885,5 +888,80 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- include all logic -->
     <script src="js/app.js"></script>
+
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"
+    ></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.151.3/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/",
+          "controls": "https://unpkg.com/three@0.151.3/examples/jsm/controls/OrbitControls.js",
+          "loaders": "https://unpkg.com/three@0.151.3/examples/jsm/loaders/GLTFLoader.js"
+        }
+      }
+    </script>
+    <script type="module">
+      import * as THREE from "three";
+      import { OrbitControls } from "controls";
+      import { GLTFLoader } from "loaders";
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+      );
+
+      const renderer = new THREE.WebGLRenderer({ alpha: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      const gameBox = document.querySelector('.hero-image')
+      gameBox.appendChild(renderer.domElement);
+
+      // const controls = new OrbitControls(camera, renderer.domElement);
+
+      // const geometry = new THREE.BoxGeometry(1, 1, 1);
+      // const material = new THREE.MeshLambertMaterial({ color: 0x00ff00 });
+      // const cube = new THREE.Mesh(geometry, material);
+      // scene.add(cube);
+
+      camera.position.z = 1;
+      camera.position.x =  1;
+      camera.position.y =  0.4;
+      // camera.position.y = -2;
+
+      const ambientLight = new THREE.AmbientLight(0x4BE2F2, 10); // soft white light
+      scene.add(ambientLight);
+
+      const pointLight = new THREE.PointLight(0xffffff, 1, 100);
+      pointLight.position.set(50, 50, 50);
+      scene.add(pointLight);
+
+      const loader = new GLTFLoader();
+      let game;
+
+      loader.load("scene.gltf", function (gltf) {
+        game = gltf.scene;
+        game.scale.set(0.4, 0.48, 0.3); 
+        scene.add(game);
+      });
+
+      function animate() {
+        if(game){
+          game.rotation.y += 0.01
+          // game.rotation.z += 0.01
+        }
+
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+      }
+      animate();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
   </body>
 </html>

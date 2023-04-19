@@ -16,12 +16,16 @@
       {
         "imports": {
           "three": "https://unpkg.com/three@0.151.3/build/three.module.js",
-          "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/"
+          "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/",
+          "controls": "https://unpkg.com/three@0.151.3/examples/jsm/controls/OrbitControls.js",
+          "loaders": "https://unpkg.com/three@0.151.3/examples/jsm/loaders/GLTFLoader.js"
         }
       }
     </script>
     <script type="module">
       import * as THREE from "three";
+      import { OrbitControls } from "controls";
+      import { GLTFLoader } from "loaders";
 
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(
@@ -31,20 +35,41 @@
         1000
       );
 
-      const renderer = new THREE.WebGLRenderer();
+      const renderer = new THREE.WebGLRenderer({ alpha: true });
       renderer.setSize(window.innerWidth, window.innerHeight);
       document.body.appendChild(renderer.domElement);
 
-      const geometry = new THREE.BoxGeometry(1, 1, 1);
-      const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-      const cube = new THREE.Mesh(geometry, material);
-      scene.add(cube);
+      const controls = new OrbitControls(camera, renderer.domElement);
+
+      // const geometry = new THREE.BoxGeometry(1, 1, 1);
+      // const material = new THREE.MeshLambertMaterial({ color: 0x00ff00 });
+      // const cube = new THREE.Mesh(geometry, material);
+      // scene.add(cube);
 
       camera.position.z = 5;
-       camera.position.x = 1;
-       camera.position.y = 1;
+      // camera.position.x = 4;
+      // camera.position.y = -2;
+
+      const ambientLight = new THREE.AmbientLight(0xffffff, 10); // soft white light
+      scene.add(ambientLight);
+
+      const pointLight = new THREE.PointLight(0xffffff, 1, 100);
+      pointLight.position.set(50, 50, 50);
+      scene.add(pointLight);
+
+      const loader = new GLTFLoader();
+      let game;
+
+      loader.load("scene.gltf", function (gltf) {
+        game = gltf.scene;
+        game.scale.set(30, 30, 30);
+        scene.add(game);
+      });
 
       function animate() {
+        // cube.rotation.x += 0.01
+        // cube.rotation.z += 0.01
+
         requestAnimationFrame(animate);
         renderer.render(scene, camera);
       }

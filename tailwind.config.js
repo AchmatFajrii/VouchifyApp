@@ -24,6 +24,10 @@ module.exports = {
         "3xl": "2.500rem",
         "4xl": "3rem",
       },
+      margin: {
+        'm110': '-110px',
+        'm90': '-90px',
+      }
     },
   },
   plugins: [],
