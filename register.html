@@ -28,12 +28,12 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
   </head>
-  <body class="bg-primary">
+  <body class="bg-primary" style="height: 100%;">
 
     <!--TODO FORMAT URUTAN UTILITY
     class="name | display | size | text | color | decoration | responsive"
     -->
-    
+
     <!--* HEADER Start -->
     <header class="py-5 text-base text-white font-semibold bg-primary border-b-2 border-white sticky top-0 z-50">
         <div class="container mx-auto px-10 lg:px-32">
@@ -133,79 +133,75 @@
 
     <!--* MAIN Start -->
       <main class="my-10">
-        <!-- login section start -->
-        <section class="login">
+        <section class="register">
           <div class="container mx-auto lg:px-32">
-            <div class="form-login flex flex-col justify-center md:flex-row md:justify-between">
-              <div class="login flex-1 mx-4 relative border-2 border-white">
-                <h3 class="form-label px-4 py-1 text-lg text-white font-bold bg-footer absolute top-[-1rem] left-1/2 translate-x-[-50%] md:text-xl">LOGIN</h3>
-                <form class="login-form py-10 px-5" method="">
-                  <p class="text-sm text-center text-white md:text-base">Already Registered? Please Login From Here.</p>
-                  <div class="form-input flex flex-wrap justify-between items-center mt-5">
-                    <div class="email w-full lg:w-[49%]">
-                      <label class="text-sm text-zinc-400 md:text-base" for="email">EMAIL ADDRESS*</label> <br>
-                      <input id="email" class="email-input py-2 px-4 w-full mt-1 text-white text-sm font-semibold rounded-full bg-primary border border-white md:text-base" name="email" type="email">
+            <h1 class="text-center text-white text-lg font-bold md:text-2xl">BUAT AKUN PELANGGAN BARU</h1>
+            <form class="register-form" action="">
+            <div class="flex flex-wrap justify-center md:justify-between">
+              <div class="relative w-full mt-12 mx-4 border-2 border-white">
+                <h3 class="form-label px-4 py-1 text-base text-center text-white font-bold bg-footer absolute top-[-1rem] left-1/2 translate-x-[-50%] md:translate-x-0 md:left-12 md:text-start md:text-xl">PERSONAL INFORMATION</h3>
+                <div class="py-12 px-5">
+                  <div class="flex flex-wrap justify-between items-center">
+                    <div class="nama-depan w-full lg:w-[49%]">
+                      <label class="text-sm text-zinc-400 md:text-base" for="nama-depan">NAMA DEPAN* </label> <br>
+                      <input id="nama-depan" class="nama-depan-input w-full mt-1 py-2 px-4 text-white text-sm font-semibold bg-primary rounded-full border border-white md:text-base" name="namaDepan" type="text">
                     </div>
-                    <div class="password w-full lg:w-[49%]">
-                      <label class="text-sm text-zinc-400 md:text-base" for="password">PASSWORD*</label> <br>
-                      <input id="password" class="password-input py-2 px-4 w-full mt-1 text-white text-sm font-semibold rounded-full bg-primary border border-white md:text-base" name="password" type="password">
+                    <div class="nama-belakang w-full lg:w-[49%]">
+                      <label class="text-sm text-zinc-400 md:text-base" for="nama-belakang">NAMA BELAKANG*</label> <br>
+                      <input id="nama-belakang" class="nama-belakang-input w-full mt-1 py-2 px-4 text-white text-base font-semibold bg-primary rounded-full border border-white" name="namaBelakang" type="text">
                     </div>
                   </div>
-                  <div class="flex justify-between items-center">
-                    <a class="mt-5 text-sm text-zinc-400 border-b border-zinc-400 md:text-base" href="">Lupa password?</a>
-                    <button class="sign-in flex items-center ml-auto mt-4 py-2 px-4 text-base text-white bg-secondary rounded-full md:text-lg md:px-8 hover:bg-primary">
-                      LOGIN
+                </div>
+              </div>
+              <div class="relative w-full mt-12 mx-4 border-2 border-white">
+                <h3 class="form-label px-4 py-1 text-base text-center text-white font-bold bg-footer absolute top-[-1rem] left-1/2 translate-x-[-50%] md:translate-x-0 md:left-12 md:text-start md:text-xl">SIGN-UP INFORMATION</h3>
+                <div class="py-12 px-5">
+                  <div class="flex flex-wrap justify-between items-center">
+                    <div class="email w-full lg:w-[49%]">
+                      <label class="text-sm text-zinc-400 md:text-base" for="email">EMAIL*</label> <br>
+                      <input id="email" class="email-input w-full mt-1 py-2 px-4 text-white text-sm font-semibold bg-primary rounded-full border border-white md:text-base" name="email" type="email">
+                    </div>
+                    <div class="telepon w-full lg:w-[49%]">
+                      <label class="text-sm text-zinc-400 md:text-base" for="telepon">NOMOR HP*</label> <br>
+                      <input id="telepon" class="telepon-input w-full mt-1 py-2 px-4 text-white text-base font-semibold bg-primary rounded-full border border-white md:text-base" name="telepon" type="text">
+                    </div>
+                    <div class="password1 w-full md:mt-5 lg:w-[49%]">
+                      <label class="text-sm text-zinc-400 md:text-base" for="password1">KATA SANDI*</label> <br>
+                      <input id="password1" class="password-input w-full mt-1 py-2 px-4 text-white text-sm font-semibold bg-primary rounded-full border border-white md:text-base" name="password1" type="password">
+                    </div>
+                    <div class="password2 w-full md:mt-5 lg:w-[49%]">
+                      <label class="text-sm text-zinc-400 md:text-base" for="password2">KONFIRMASI KATA SANDI*</label> <br>
+                      <input id="password2" class="password-input w-full mt-1 py-2 px-4 text-white text-sm font-semibold bg-primary rounded-full border border-white md:text-base" name="password2" type="password">
+                    </div>
+                    <button class="sign-up flex items-center ml-auto mt-4 py-2 px-4 text-base text-white bg-secondary rounded-full md:text-lg md:px-8 hover:bg-primary">
+                      BUAT AKUN
                       <div class="arrow-wrapper flex items-center justify-center">
                           <div class="arrow mt-[1px] relative"></div>
                       </div>
                   </button>
                   </div>
-                  <div class="flex items-center flex-wrap justify-center mt-4 md:mt-0">
+                  <div class="flex items-center flex-wrap justify-center mt-5 md:mt-10">
                     <hr class="flex-1 border-t border-gray-300">
-                    <span class="px-4 py-1 mx-4 text-lg text-white font-bold bg-footer md:text-xl">OR</span>
+                    <span class="px-4 py-1 mx-4 text-base text-center text-white font-bold bg-footer md:text-start md:text-xl">OR SIGN UP WITH</span>
                     <hr class="flex-1 border-t border-gray-300">
                   </div>
                   <div class="login-fb-google flex flex-wrap justify-between mt-5">
-                    <a class="flex justify-between py-2 px-4 w-full bg-[#3b5998] rounded-full lg:w-[49%]" href="">
+                    <a class="flex justify-between py-2 px-4 w-full rounded-full bg-[#3b5998] lg:w-[49%]" href="">
                       <img class="w-5" src="img/fb.svg" alt="">
                       <span class="text-white text-sm md:text-base">FACEBOOK</span>
                     </a>
-                    <a class="flex justify-between py-2 px-4 w-full mt-3 bg-[#db4a39] rounded-full lg:mt-0 lg:w-[49%]" href="">
+                    <a class="flex justify-between py-2 px-4 mt-3 w-full lg:mt-0 rounded-full bg-[#db4a39] lg:w-[49%]" href="">
                       <img class="w-5" src="img/google.svg" alt="">
                       <span class="text-white text-sm md:text-base">GOOGLE</span>
                     </a>
-                  </div>                        
-                </form>
+                    <a href="login.html" class="mt-5 text-sm text-zinc-400 border-b border-zinc-400 md:text-base">Kembali</a>
+                  </div>         
+                </div>
               </div>
-              <div class="register flex-1 mx-4 mt-10 relative border-2 border-white md:mt-0">
-                <h3 class="form-label px-4 py-1 text-lg text-white font-bold bg-footer absolute top-[-1rem] left-1/2 translate-x-[-50%] md:text-xl">REGISTER</h3>
-                <form class="register-form py-10 px-5" method="">
-                  <p class="text-sm text-center text-white md:text-base">CUKUP KLIK TOMBOL DAFTAR DAN ISI FORMULIR UNTUK MENJADI BAGIAN DARI KOMUNITAS ONLINE BESAR.</p>
-                  <div class="register-benefit flex flex-col items-center mt-5">
-                    <div class="item flex items-center w-full lg:w-[49%]">
-                      <img class="w-14" src="img/safe.svg" alt="">
-                      <p class="ml-3 text-white text-base md:text-lg">AMAN, MUDAH DAN CEPAT</p>
-                    </div>
-                    <div class="item flex items-center w-full lg:w-[49%] mt-4">
-                      <img class="w-14" src="img/discount.svg" alt="">
-                      <p class="ml-3 text-white text-base md:text-lg">DAPATKAN DISKON & KEUNTUNGAN</p>
-                    </div>
-                    <div class="item flex items-center w-full lg:w-[49%] mt-4">
-                      <img class="w-14" src="img/community.svg" alt="">
-                      <p class="ml-3 text-white text-base md:text-lg">JADILAH BAGIAN DARI KOMUNITAS</p>
-                    </div>
-                    <a href="register.html" class="sign-up flex items-center ml-auto mt-4 py-2 px-4 text-base text-white bg-secondary rounded-full md:text-lg md:px-8 hover:bg-primary">
-                      REGISTER
-                      <div class="arrow-wrapper flex items-center justify-center">
-                          <div class="arrow mt-[1px] relative"></div>
-                      </div>
-                  </a>
-                  </div>
-                </form>
+            </form>
             </div>
           </div>
         </section>
-        <!-- login section end -->
       </main>
     <!--* MAIN End -->
 

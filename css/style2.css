@@ -222,9 +222,95 @@ svg {
   transition: .1s;
   transition-property: box-shadow;
 }
-.password-input:focus {
+
+  .password-input:focus {
   outline-color: rgb(0, 255, 255);
   box-shadow: -3px -3px 15px rgb(0, 255, 255);
   transition: .1s;
   transition-property: box-shadow;
+}
+
+  .telepon-input:focus {
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: .1s;
+  transition-property: box-shadow;
+}
+
+.sign-up {
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  transition: 0.2s;
+  gap: 0.6em;
+}
+
+.sign-up .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  height: var(--arrow-stroke);
+  transition: 0.2s;
+}
+
+.sign-up .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.sign-up:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.sign-up:hover .arrow:before {
+  right: 0;
+}
+
+.sign-in {
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  transition: 0.2s;
+  gap: 0.6em;
+}
+
+.sign-in .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  height: var(--arrow-stroke);
+  transition: 0.2s;
+}
+
+.sign-in .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.sign-in:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.sign-in:hover .arrow:before {
+  right: 0;
 }
